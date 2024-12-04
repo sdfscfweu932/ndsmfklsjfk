@@ -362,3 +362,13 @@ end)
 print("MM2 Candy Auto Farm script with persistent GUI and fixed toggle loaded.")
    end,
 })
+
+local MainTab = Window:CreateTab("Settings", nil) -- Title, Image
+local IYSection = MainTab:CreateSection("Infinite Yeild")
+
+local Button = MainTab:CreateButton({
+   Name = "Infinte Yeild",
+   Callback = function()
+  loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end,
+})
